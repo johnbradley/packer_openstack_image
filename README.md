@@ -1,6 +1,13 @@
 # packer_openstack_image
 Create image in private openstack cloud via packer
 
+packer can create an image in your openstack cloud with this process:
+- launch a temporary(builder) VM
+- ssh into the vm and add software
+- creating an openstack image in your cloud
+- deleting the temporary VM
+
+
 ## Setup
 - Install packer: https://www.packer.io/docs/installation.html
 - Setup openstack environment variables (OS_PROJECT_ID, OS_PROJECT_NAME, OS_PASSWORD). I did this by downloading the Openstack RC file v3. I had to manually set OS_DOMAIN_NAME.
