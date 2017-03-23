@@ -29,3 +29,4 @@ packer build ubuntu.json
 ```
 
 
+Based on https://www.zetta.io/en/help/articles-tutorials/creating-images-packer/
