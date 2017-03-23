@@ -20,6 +20,7 @@ export OS_DOMAIN_NAME=Default
 - flavor - this is the flavor that will be used in your builder
 - security_groups - security groups used in the builder (will need to include ssh security)
 - networks - you will need the ID of a public facing network(so packer can ssh)
+
 Then edit __ubuntu.json__ filling in your cluster specific values
 
 ## Create your image
