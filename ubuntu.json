@@ -1,0 +1,20 @@
+{
+  "builders": [{
+      "type": "openstack",
+      "image_name": "packer_ubuntu_test",
+      "source_image": "9954755a-36c1-400c-a61f-070d60be4fcb",
+      "flavor": "m1.small",
+      "security_groups": ["default","ssh"],
+      "ssh_username": "ubuntu",
+      "networks": ["5894c1de-6996-4175-830c-374d8ae143ec"]
+    }
+  ],
+  "provisioners": [{
+    "type": "shell",
+    "inline": [
+      "sleep 30",
+      "sudo apt-get update",
+      "sudo apt-get install -y fortune cowsay"
+    ]
+  }]
+}
